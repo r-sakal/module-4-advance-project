@@ -1,6 +1,18 @@
 // template template_b9w6r68
 // public key 2hwRfmNF5_s-ayqn-
 // service id service_ppzsc4k
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
 
 function contact (event) {
     event.preventDefault();
@@ -26,7 +38,6 @@ function contact (event) {
     })
 }
 
-let isModalOpen = false;
 function toggleModal() {
     if (isModalOpen) {
         isModalOpen = false

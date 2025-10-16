@@ -39,13 +39,13 @@
                     link__hover-effect--black
                     ">Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
                     ">Contact</a>
-                <li class="nav__link click">
+                <li class="nav__link click" onclick="toggleContrast()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -61,7 +61,7 @@
                 <p class="header__para">
                     I'm a <b class='orange'>Junior Frontend Software Engineer </b> with a strong passion for experiences.
                     <br>
-                    Here's a bit more <b class="orange">about me</b>.
+                    Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
                 </p>
                 <div class="social__list">
                     <a href="https://www.linkedin.com/in/robert-sakal-7b828355/" target="_blank" class="social__link click" >
@@ -108,7 +108,7 @@
                 </div>
             </div>
             <div class="modal__half modal__contact">
-                <i class="fa-solid fa-xmark modal__exit click"></i>
+                <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
                 <h3 class="modal__title modal__title--contact">
                     Let's have a chat!</h3>
                 <h3 class="modal__sub-title modal__sub-title--contact">
